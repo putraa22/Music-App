@@ -1,8 +1,8 @@
-# Project Lyrics
+# Project Music App
 
 Develop an elegant React.js Music Application. 
 
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
+<!-- Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing) -->
 
 # Contributing
 
@@ -125,7 +125,7 @@ Here we are going to focus on 2. Creating a Topical Branch:
 
 4. Go to [Pull Requests](git@github.com:putraa22/Music-App.git) and click on the `New Pull Request` button.
 
-5. Select the `main` branch as the `base` branch and the `jsm-dev` branch as the `compare` branch.
+5. Select the `main` branch as the `base` branch and the `<branch-name>` branch as the `compare` branch.
 
 6. Follow the template and fill in the proper information for the pull request.
 
