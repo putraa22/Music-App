@@ -5,10 +5,7 @@ export const shazamCoreApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://shazam-core.p.rapidapi.com/v1",
     prepareHeaders: (headers) => {
-      headers.set(
-        "X-RapidAPI-Key",
-        "062c603052mshae44a42f33456c6p1bdf24jsn91101b3f6c66"
-      );
+      headers.set("X-RapidAPI-Key", import.meta.env.VITE_SHAZAM_CORE_RAPID_API_KEY);
 
       return headers;
     },
@@ -18,8 +15,11 @@ export const shazamCoreApi = createApi({
     getSongDetails: builder.query({
       query: ({ songid }) => `/tracks/details?track_id=${songid}`,
     }),
+    getSongsByGenre: builder.query({ query: (genre) => `/charts/genre-world?genre_code=${genre}` }),
     getSongRelated: builder.query({query: ({songid}) => `/tracks/related?track_id=${songid}`}),
+    getArtistDetails: builder.query({query: (artistId) => `/artists/details?artist_id=${artistId}`}),
+    getSongsByCountry: builder.query({query : (countryCode) => `/charts/country?country_code=${countryCode}`})
   }),
 });
 
-export const { useGetTopChartsQuery, useGetSongDetailsQuery, useGetSongRelatedQuery } = shazamCoreApi;
+export const { useGetTopChartsQuery, useGetSongDetailsQuery, useGetSongRelatedQuery, useGetArtistDetailsQuery, useGetSongsByCountryQuery, useGetSongsByGenreQuery } = shazamCoreApi;
