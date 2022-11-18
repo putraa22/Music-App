@@ -1,14 +1,8 @@
 # Project Music App
 
-Develop an elegant React.js Music Application. 
+Develop an elegant Music Application.
 
-<!-- Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing) -->
-
-# Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue.
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
-
+Check out this [music-app](https://twenty2-music-app.netlify.app/) to see my app.
 
 ## System Requirements
 
@@ -80,17 +74,6 @@ To set up a development environment, please follow these steps:
 
     Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Issues
-
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
-
-Please try to create bug reports that are:
-
-- _Reproducible._ Include steps to reproduce the problem.
-- _Specific._ Include as much detail as possible: which version, what environment, etc.
-- _Unique._ Do not duplicate existing opened issues.
-- _Scoped to a Single Bug._ One bug per report.
-
 
 ## Pull Request
 
@@ -105,7 +88,7 @@ Here we are going to focus on 2. Creating a Topical Branch:
 1. First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
 
    ```bash
-    git pull origin main
+    git pull origin master
    ```
 
    *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
@@ -114,10 +97,10 @@ Here we are going to focus on 2. Creating a Topical Branch:
    
    Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
    
-   I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
+   I'm going to create a new branch called `free-dev` from the `master` branch and push it to github.
 
    ```bash
-    git checkout -b <branch-name> main
+    git checkout -b <branch-name> 
     git push origin <branch-name>
    ```
 
